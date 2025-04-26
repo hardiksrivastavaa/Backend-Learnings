@@ -1,0 +1,27 @@
+<%- include("includes/header.ejs", {title: "Edit ToDo" , route : "Edit" }); %>
+
+    <main>
+        <div id="task-container">
+            <form action="/tasks/<%= task.id %>?_method=PATCH" method="post" class="task-card-edit">
+                <h2 style="margin-bottom: 10px">ID : <%= task.id %>
+                </h2>
+                <ul>
+                    <li class="editlist">
+                        Title :
+                        <input type="text" name="title" value="<%"="task.title" % /> />
+                    </li>
+                    <li class="editlist">
+                        Description :
+                        <textarea name="description" rows="1"><%= task.description %></textarea>
+                    </li>
+                    <li class="editlist">
+                        completed : <input type="checkbox" name="completed" value="true" <%=task.completed==="true"
+                            ? "checked" : "" %> />
+                    </li>
+                </ul>
+                <button id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <%- include("includes/footer.ejs"); %>

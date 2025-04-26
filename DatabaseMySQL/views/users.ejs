@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Users</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <h1>All Our Users Data <br> <a href="/users/new">Add New User</a></h1>
+
+    <table>
+      <th>
+        <tr id="header">
+          <td>ID</td>
+          <td>User Name</td>
+          <td>Email ID</td>
+          <td>Edit</td>
+          <td>Delete</td>
+        </tr>
+      </th>
+      <tbody>
+        <% for (const user of users) { %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.username %></td>
+          <td><%= user.email %></td>
+          <td><a id="edit" href="/users/<%= user.id %>/edit">Edit</a></td>
+          <td><a id="delete" href="/users/<%= user.id %>/delete">Delete</a></td>
+        </tr>
+
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+<script></script>

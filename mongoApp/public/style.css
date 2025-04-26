@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    border-bottom: 2px solid;
+
+}
+
+.chats-container {
+    background-color: yellow;
+    list-style-position: inside;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.chats-list {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+a, button {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.new-chat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-chat a {
+    background-color: green;
+    margin-bottom: 15px;
+    padding: 5px 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.new-chat-form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-chats {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.new-chats input, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.new-chat-form button {
+    background-color: blue;
+    color: white;
+    margin-top: 20px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}   

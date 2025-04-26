@@ -1,0 +1,19 @@
+<%- include("includes/head.ejs", {title : "New Professional" , isStyle : true}); %>
+
+    <body>
+        <h1 id="heading">New Professionals</h1>
+
+        <div id="post-container">
+
+            <form action="/posts" method="post" id="form-container">
+                <input type="text" name="name" placeholder="Enter your Name" />
+                <input type="text" name="role" placeholder="Enter your role" />
+                <input type="number" name="age" placeholder="Enter you age" />
+                <button type="submit">Add to Posts</button>
+            </form>
+        </div>
+
+        <%- include("includes/footer.ejs"); %>
+    </body>
+
+    </html>

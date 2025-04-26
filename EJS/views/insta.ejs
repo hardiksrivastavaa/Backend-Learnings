@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>Welcome to the Home Page of Our Application Dear, @<%= username %>
+    </h1>
+
+    <h2>List of Followers that follow you, Here : </h2>
+
+    <ul>
+        <% for (let name of followers) { %>
+
+        <li><%= name %></li>
+
+        <% } %>
+    </ul>
+
+
+</body>
+
+</html>

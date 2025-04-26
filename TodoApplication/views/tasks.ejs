@@ -1,0 +1,27 @@
+<%- include("includes/header.ejs", {title: "ToDo Home" , route : "Tasks" }); %>
+
+    <main>
+        <div id="task-container">
+            <% for (const task of tasks) { %>
+
+                <div class="task-card">
+                    <ul>
+                        <li>ID : <%= task.id %></li>
+                        <li>Title : <%= task.title %></li>
+                        <li>Description : <%= task.description %></li>
+                        <li>Completed : <%= task.completed %></li>
+                        <div id="btns">
+                            <a href="/tasks/<%= task.id %>/edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="/tasks/<%= task.id %>"><i class="fa-solid fa-eye"></i></a>
+                            <form action="/tasks/<%= task.id %>?_method=DELETE" method="post">
+                                <button><i class="fa-solid fa-trash-can"></i></button>
+                            </form>
+                        </div>
+                    </ul>
+                </div>
+
+                <% } %>
+        </div>
+    </main>
+
+    <%- include("includes/footer.ejs"); %>

@@ -1,0 +1,24 @@
+<%- include("includes/head.ejs", {title : "Show Professionals" , isStyle : true}); %>
+
+    <body>
+        <h1 id="heading">One Professionals</h1>
+
+        <div id="post-container">
+            <div class="post-card">
+                <h1>ID : <%= post.id %>
+                </h1>
+                <h1>Name : <%= post.name %>
+                </h1>
+                <h2>Role : <%= post.role %>
+                </h2>
+                <h3>Age : <%= post.age %>
+                </h3>
+            </div>
+        </div>
+
+        <h2 id="newuser"><a href="http://localhost:8080/posts">Back</a></h2>
+
+        <%- include("includes/footer.ejs"); %>
+    </body>
+
+    </html>

@@ -1,0 +1,16 @@
+{
+  "name": "import.export",
+  "version": "1.0.0",
+  "main": "export.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "import.export": "file:",
+    "random-words": "^2.0.1"
+  }
+}

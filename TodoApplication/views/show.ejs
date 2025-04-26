@@ -1,0 +1,17 @@
+<%- include("includes/header.ejs", {title: "Show ToDo" , route : "Show" }); %>
+
+    <main>
+        <div id="task-container">
+            <div class="task-card">
+                <ul>
+                    <li>ID : <%= task.id %></li>
+                    <li>Title : <%= task.title %></li>
+                    <li>Description : <%= task.description %></li>
+                    <li>completed : <%= task.completed %></li>
+                    <div id="btns"><a href="/tasks/">Back</a></div>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <%- include("includes/footer.ejs"); %>

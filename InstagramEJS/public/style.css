@@ -1,0 +1,27 @@
+body {
+    background-color: cornsilk;
+}
+
+#header,
+#likesComments {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: bisque;
+}
+
+.header_c {
+    display: flex;
+}
+
+h1 {
+    background-color: bisque;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}

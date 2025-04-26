@@ -1,0 +1,23 @@
+<%- include("includes/header.ejs", {title: "New ToDo" , route : "New" }); %>
+
+    <main>
+        <div id="task-container">
+            <form action="/tasks/" method="post" class="task-card-edit">
+                <ul>
+                    <li class="editlist">
+                        Title : <input type="text" name="title" placeholder="Enter Tittle" />
+                    </li>
+                    <li class="editlist">
+                        Description :
+                        <textarea name="description" placeholder="Enter Description" rows="1"></textarea>
+                    </li>
+                    <li class="editlist">
+                        completed : <input type="checkbox" name="completed" value="true" />
+                    </li>
+                </ul>
+                <button id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <%- include("includes/footer.ejs"); %>

@@ -1,0 +1,31 @@
+<%- include("includes/head.ejs", {title : "All Professional" , isStyle : true}); %>
+
+    <body>
+        <h1 id="heading">All Professionals</h1>
+
+        <div id="post-container">
+            <% for (const post of posts) { %>
+
+                <div class="post-card">
+                    <h1>Name : <%= post.name %>
+                    </h1>
+                    <h2>Role : <%= post.role %>
+                    </h2>
+                    <h3>Age : <%= post.age %>
+                    </h3>
+                    <h2><a href="http://localhost:8080/posts/<%= post.id %>">Show</a></h2>
+                    <h2><a href="http://localhost:8080/posts/<%= post.id %>/edit">Edit</a></h2>
+                    <form action="/posts/<%= post.id %>?_method=DELETE" method="post">
+                        <button>Delete</button>
+                    </form>
+                </div>
+
+                <% } %>
+        </div>
+
+        <h2 id="newuser"><a href="http://localhost:8080/posts/new">Create New User</a></h2>
+
+        <%- include("includes/footer.ejs"); %>
+    </body>
+
+    </html>

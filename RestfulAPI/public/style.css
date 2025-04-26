@@ -1,0 +1,73 @@
+/* Index Page Styling */
+
+#heading {
+    text-align: center;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    background-color: antiquewhite;
+}
+
+#post-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.post-card {
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid;
+    padding: 10px;
+    background-color: aqua;
+    box-shadow: 1px 2px 3px black;
+    cursor: pointer;
+}
+
+.post-card:hover {
+    transform: scale(1.01);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    
+    margin: 20px;
+    text-align: center;
+}
+
+#footer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Index Page Styling */
+
+#newuser {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#newuser a {
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#newuser a:hover {
+    background-color: yellow;
+}
+
+#newuser:active {
+    transform: scale(1.05);
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

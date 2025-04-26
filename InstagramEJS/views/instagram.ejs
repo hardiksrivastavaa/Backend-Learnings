@@ -1,0 +1,34 @@
+<%- include("includes/head.ejs", {title : "Instagram", includeCSS : true}); %>
+
+<body>
+    <div id="header">
+        <div class="header_c">
+            <h1>Instagram |&nbsp;</h1>
+            <h1>@<%= data.name %> &nbsp;</h1>
+        </div>
+        <div class="header_c">
+            <h1>Followers : <%= data.followers %> |&nbsp;</h1>
+            <h1>Following : <%= data.following %> &nbsp;</h1>
+        </div>
+    </div>
+    <hr />
+
+    <div id="posts">
+        <% for (const post of data.posts) { %>
+
+            <img src="<%=post.image%>" />
+            <div id="likesComments">
+                <h1>Likes : <%= post.likes %>
+                </h1>
+                <h1>Comments : <%= post.comments %>
+                </h1>
+            </div>
+
+            <% } %>
+    </div>
+
+    <%- include("includes/footer.ejs"); %>
+
+</body>
+
+</html>

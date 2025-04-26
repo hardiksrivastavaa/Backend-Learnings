@@ -1,0 +1,22 @@
+1. is used to log in to MySQL as the root user.
+
+mysql -u root -p  <= 
+
+2. Move to DatabaseMySQL Folder Before Execution
+
+cd DatabaseMySQL
+mysql -u root -p yourdatabase < schema.sql
+
+
+
+let data = [];
+for (let i = 0; i <= 100; i++) {
+  data.push(getRandomUser());
+}
+
+let q = "INSERT INTO user values ?";
+
+
+
+
+

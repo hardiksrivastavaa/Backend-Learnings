@@ -1,0 +1,24 @@
+<%- include("includes/head.ejs", {title : "Edit Professional" , isStyle : true}); %>
+
+    <body>
+        <h1 id="heading">Edit Professionals</h1>
+
+        <div id="post-container">
+
+            <h1>ID : <%= post.id %>
+            </h1>
+            <h1>Name : <%= post.name %>
+            </h1>
+            <h1>Role : <%= post.role %>
+            </h1>
+
+            <form action="/posts/<%= post.id %>?_method=PATCH" method="post" id="form-container">
+                <textarea name="age"><%= post.age %></textarea>
+                <button type="submit">Submit Edit</button>
+            </form>
+        </div>
+
+        <%- include("includes/footer.ejs"); %>
+    </body>
+
+    </html>
